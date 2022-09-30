@@ -1,0 +1,209 @@
+@font-face {
+    font-family: valorant;
+    src: url('../Fonts/Valorant\ Font.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#breeze-map {
+    margin-top: 50px;
+    background-image: url(../Assets/breeze.png);
+    background-size: cover;
+}
+
+#icebox-map {
+    background-image: url(../Assets/icebox.png);
+    background-size: cover;
+}
+
+#ascent-map {
+    background-image: url(../Assets/ascent.png);
+    background-size: cover;
+}
+
+#maps-wrapper {
+    /* width: 60%; */
+    margin: 0 auto;
+    padding-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #ece8e1;
+    align-items: center;
+}
+
+.map-banner {
+    padding: 20px 0px;
+    margin-bottom: 50px;
+
+    width: 50%;
+    height: 300px;
+    background-color: #e4d9cb;
+    display: flex;
+    justify-content: left;
+    border-radius: 5px;
+}
+
+.map-banner-text-wrapper{
+    width: 40% ;
+    padding: 10px;
+    margin: 15px 10px 0px 15px;
+
+    height: fit-content;
+    background-color: rgba(56, 56, 56, 0.582);
+    color: white;
+    border-radius: 5px;
+
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.map-banner-text-wrapper h3 {
+    text-transform: uppercase;
+    font-family: valorant;
+    font-size: 24px;
+    
+}
+
+.map-banner-text-wrapper p {
+    text-align: justify;
+}
+
+
+/*Header*/
+#header{
+    background-color:  #070707;
+    display: flex;
+    justify-content: space-between;
+    font-family: valorant;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#kiri-header{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding-left: 24px;
+}
+
+#kiri-header p{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-size: 28px;
+    font-family: valorant;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+
+#logo{
+    width: 30px;
+    padding: 10px;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 17px;
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+    background-color: rgb(250, 52, 52);
+}
+
+.content{
+    position: absolute;
+    display: none;
+    background-color: #070707;
+    margin-top: 60px;
+    padding-bottom: 8px;
+}
+
+.dropdown-content {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a{
+    /* padding: 10px; */
+    width: 90px;
+    height: 20px;
+}
+
+.dropdown:hover .content{
+    display: block;
+    /* padding: 50px */
+}
+
+.dropdown .dropdown-content:hover {
+    /* padding: 50px; */
+    background-color: rgb(250, 52, 52);
+}
+
+
+
+/*Footer*/
+#footer{
+    padding: 10px 0px;
+    height: 50px;
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#kiri-footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#kanan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+#fb{
+    width: 30px;
+    padding-right: 20px;
+}
+
+#ig{
+    width: 30px;
+}
+
+#yt{
+    padding-left: 20px;
+    width: 47px;
+}

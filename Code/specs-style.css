@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "valorant";
+    src: url(../fonts/Valorant\ Font.ttf);
+}
+
+*{
+    margin : 0;
+    padding: 0;
+}
+
+/*Header*/
+#header{
+    background-color:  #070707;
+    display: flex;
+    justify-content: space-between;
+    font-family: valorant;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#kiri-header{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding-left: 24px;
+}
+
+#kiri-header p{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+
+#logo{
+    width: 30px;
+    padding: 10px;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 17px;
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+    background-color: rgb(250, 52, 52);
+}
+
+.content{
+    position: absolute;
+    display: none;
+    background-color: #070707;
+    margin-top: 60px;
+    padding-bottom: 8px;
+}
+
+.dropdown-content {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a{
+    /* padding: 10px; */
+    width: 90px;
+    height: 20px;
+}
+
+.dropdown:hover .content{
+    display: block;
+    /* padding: 50px */
+}
+
+.dropdown .dropdown-content:hover {
+    /* padding: 50px; */
+    background-color: rgb(250, 52, 52);
+}
+
+body{
+    background-color: #ece8e1;
+}
+
+#content{
+    font-family: "valorant";
+}
+
+#top {
+    background-image: url(../assets/specwall.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+#top h1{
+    display: inline-block;
+    color: white;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+#pc{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: column;
+}
+#table1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2.5rem;
+    background-color: #070707;
+    color: white;
+    font-size: 20px;
+}
+
+.contentbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#table2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding: 1.5rem;
+    font-size: 20px;
+    
+}
+
+.tb1{
+    padding: 1.5rem;
+    background-color: #ece8e1;
+}
+.tb2{
+    padding: 1.5rem;
+    background-color: #ece8e1;
+}
+.tb3{
+    padding: 1.5rem;
+    background-color: #ece8e1;
+}
+
+
+
+/*Footer*/
+#footer{
+    padding: 10px 0px;
+    height: 5%;
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#kiri-footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#kanan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+#fb{
+    width: 30px;
+    padding-right: 20px;
+}
+
+#ig{
+    width: 30px;
+}
+
+#yt{
+    padding-left: 20px;
+    width: 47px;
+}
+
+@media screen and (max-width: 800px) {
+
+    #header{
+        flex-direction: column;
+        position: relative;
+    }
+
+    #kiri-header{
+        flex-direction: column;
+    }
+
+    #pc{
+        align-items: center;
+        align-content: center;
+        font-size: 38px;
+    }
+
+    #table1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    #table2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .column{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #top
+    {
+        width: 100%;
+        height: 300px;
+    }
+    
+    #xx{
+        display: none;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+    #kiri-footer{
+        justify-content: center;
+        padding-left: 5px;
+    }
+    #kanan{
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        padding-right: 30px;
+        
+    }
+}
+
+@media screen and (max-width : 502px){
+    .dropdown{
+        display: none;
+    }
+
+    #pc{
+        font-size: 14px;
+    }
+    
+    #top{
+        height: 200px;
+    }
+
+    #table1{
+        font-size: 19px;
+    }
+
+    #top h1{
+        font-size: 40px;
+        margin-left: 25px;
+    }
+}

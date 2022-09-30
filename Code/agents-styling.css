@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: valorant;
+    src: url('../Fonts/Valorant\ Font.ttf');
+}
+
+/*Header*/
+#header{
+    background-color:  #070707;
+    display: flex;
+    justify-content: space-between;
+    font-family: valorant;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#kiri-header{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding-left: 24px;
+}
+
+#kiri-header p{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-size: 28px;
+    font-family: valorant;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+
+#logo{
+    width: 30px;
+    padding: 10px;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 17px;
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+    background-color: rgb(250, 52, 52);
+}
+
+.content{
+    position: absolute;
+    display: none;
+    background-color: #070707;
+    margin-top: 60px;
+    padding-bottom: 8px;
+}
+
+.dropdown-content {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a{
+    /* padding: 10px; */
+    width: 90px;
+    height: 20px;
+}
+
+.dropdown:hover .content{
+    display: block;
+    /* padding: 50px */
+}
+
+.dropdown .dropdown-content:hover {
+    /* padding: 50px; */
+    background-color: rgb(250, 52, 52);
+}
+
+
+
+/*Footer*/
+#footer{
+    padding: 10px 0px;
+    height: 50px;
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#kiri-footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#kanan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+#fb{
+    width: 30px;
+    padding-right: 20px;
+}
+
+#ig{
+    width: 30px;
+}
+
+#yt{
+    padding-left: 20px;
+    width: 47px;
+}
+
+#agents-content-wrapper {
+    padding-top: 70px;
+}
+
+#agents-mini-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: valorant;
+    color: white;
+    align-items: center;
+    
+}
+
+.slider-content{
+    /* width: 100%; */
+    height: 580px;
+}
+
+#agent-background{
+    z-index: -1;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    
+}
+
+.agents-text-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.agents-text-header img {
+    width: 30px;
+    height: 30px;
+}
+
+.agents-text-header h1{
+    font-family: valorant;
+    margin-right: 15px;
+}
+
+.show-agents{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.agents-text-wrapper {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+
+.agents-text-desc {
+    width: 300px;
+    height: auto;
+    max-height: 300px;
+    text-align: justify;
+}
+
+.agents-picture {
+    width: 330px;
+    height: 510px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    float: right;
+}
+
+.show-agents-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#astra {
+    background-image: url(../Assets/Agents/astra.png);
+}
+
+#breach {
+    background-image: url(../Assets/Agents/breach.png);
+}
+
+#brimstone {
+    background-image: url(../Assets/Agents/brimstone.png);
+}
+
+#omen {
+    background-image: url(../Assets/Agents/omen.png);
+}
+
+#viper {
+    background-image: url(../Assets/Agents/viper.png);
+}
+
+#skye {
+    background-image: url(../Assets/Agents/skye.png);
+}
+
+#sova {
+    background-image: url(../Assets/Agents/sova.png);
+}
+
+#jett {
+    background-image: url(../Assets/Agents/jett.png);
+}
+
+#raze {
+    background-image: url(../Assets/Agents/raze.png);
+}
+
+#reyna {
+    background-image: url(../Assets/Agents/reyna.png);
+}
+
+#yoru {
+    background-image: url(../Assets/Agents/yoru);
+}
+
+#sage {
+    background-image: url(../Assets/Agents/sage.png);
+}
+
+#cypher {
+    background-image: url(../Assets/Agents/cypher.png);
+}
+
+#killjoy {
+    background-image: url(../Assets/Agents/killjoy.png);
+}
+
+#phoenix {
+    background-image: url(../Assets/Agents/phoenix.png);
+}
+
+#yoru {
+    background-image: url(../Assets/Agents/yoru.png);
+}
+
+#next {
+    background-color: black;
+}
+
+
+

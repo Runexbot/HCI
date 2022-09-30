@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style-reg.css">
+    <title>Pre-Register</title>
+</head>
+<body>
+    <div id="header">
+        <div id="kiri-header">
+            <a href="home.html"><img id="logo" src="../Assets/whitelogo.png" alt=""></a>
+            <p>LaForant</p>
+        </div>
+        <div id="nav">
+                <div class="dropdown">
+                    <a href="agents.html">Agents</a>
+                </div>
+            
+            <div class="dropdown" id="maps">
+                <a href="maps.html">Maps</a>
+                <div class="content">
+                    <div class="dropdown-content"><a href="maps.html">Ascent</a></div>
+                    <div class="dropdown-content"><a href="maps.html">Breeze</a></div>
+                    <div class="dropdown-content"><a href="maps.html">Icebox</a></div>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <a href="specs.html">System Requirements</a>
+            </div>
+            
+            <div class="dropdown">
+                <a href="pre-reg.html">Pre-Register</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="body">
+        <h1>PRE-REGISTER LaForant</h1>
+        <br>
+        <div id="pre-desc">
+            <p>Submit this form to</p>
+            <p> pre-register LaForant</p>
+        </div>
+        <br>
+
+        <div id="form">
+
+            <form action="" onsubmit="validasi()"; return false; method="POST">
+                <div class="form-content">
+                    <p>Email:</p>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="form-content">
+                    <p>Username:</p>
+                    <input type="text" name="username" id="username">
+                </div>
+
+                <div class="form-content">
+                    <p>Password:</p>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                
+                <div class="form-content">
+                    <p>Date of Birth:</p>
+                    <input type="date" name="dob" id="dob">
+                </div>
+
+                <div class="form-content">
+                    <p>Nationality:</p>
+                    <input type="text" name="nat" id="nat">
+                </div>
+
+                <div class="form-content">
+                    <input type="checkbox" name="agreement" id="agreement">   Agreement to Terms    
+                </div>
+
+                <input type="submit" value="Pre-Register">
+            </form>
+        </div>
+    </div>
+        
+    <div id="footer">
+        <div id="kiri-footer">
+            <p>&copy; LaForant,2021. All Rights Reserved.</p>
+        </div>
+
+        <div id="kanan">
+            <a href="https://facebook.com"><img id="fb" src="../Assets/logo fb.png" alt=""></a> 
+           <a href="https://instagram.com"><img id="ig" src="../Assets/logo ig.png" alt=""></a> 
+           <a href="https://youtube.com"><img id="yt" src="../Assets/logo yt.png" alt=""></a> 
+        </div>
+    </div>
+    <script src="pre-reg.js"></script>
+</body>
+</html>
